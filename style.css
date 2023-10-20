@@ -1,0 +1,67 @@
+* { 
+   margin: 0;
+   padding: 0; 
+   box-sizing: border-box; 
+}
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+/** tag main tinha assumido a altura da div que tinha recebido os botoes com altura "X", ai o background foi pra aquela altura, ai**/
+main { 
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+    z-index: 999;
+    height: 100vh;  /** 100% da viewport**/
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.core { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 2vh;
+}
+
+.thumb {  
+    height: 45vh;   /** vh vw porcentagem EM**/
+    width: 35vw;
+    background-color: aqua;
+}
+
+svg {
+    height:  5vh;
+    fill: black;
+
+    
+}
+.bottom-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Top-icons {
+    gap: 20px;
+}
+button {
+    
+    border: black;
+    cursor: pointer;
+    background: transparent;
+}
+
+#shuffle-icon.hover { 
+    background-color: aqua;
+}
